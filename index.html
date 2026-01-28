@@ -3,86 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALSABILAH AMIN EMPIRES | OFFICIAL PORTFOLIO</title>
+    <title>SALSABILAH AMIN EMPIRES | GLOBAL INDUSTRIAL LEGACY</title>
     <link rel="icon" type="image/jpeg" href="pavicon.png.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --gold: #D4AF37; --dark-bg: #000810; --card-bg: rgba(255, 255, 255, 0.03); }
-        body { margin: 0; padding: 0; font-family: 'Georgia', serif; background-color: var(--dark-bg); color: #f0f0f0; scroll-behavior: smooth; text-align: center; text-transform: uppercase; }
-        header { height: 100vh; background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('cover.png') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid var(--gold); }
-        .hero-title { font-size: clamp(2rem, 8vw, 4rem); color: var(--gold); letter-spacing: 5px; margin: 0; }
-        .container { max-width: 1200px; margin: auto; padding: 60px 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .card { background: var(--card-bg); padding: 40px; border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 20px; transition: 0.4s; color: white; text-decoration: none; display: block; }
-        .card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(212, 175, 55, 0.08); }
-        .legacy-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--gold); margin-bottom: 20px; object-fit: cover; }
-        .btn-gold { background: var(--gold); color: black; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 900; margin-top: 15px; display: inline-block; width: 250px; }
-        .btn-outline { border: 2px solid var(--gold); color: var(--gold); padding: 13px 40px; border-radius: 50px; text-decoration: none; font-weight: 900; margin-top: 15px; display: inline-block; width: 250px; transition: 0.3s; }
+        :root { 
+            --gold: #D4AF37; 
+            --dark-bg: #000810; 
+            --card-bg: rgba(255, 255, 255, 0.03); 
+            --text-silver: #E0E0E0;
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Georgia', serif; 
+            background-color: var(--dark-bg); 
+            color: var(--text-silver); 
+            scroll-behavior: smooth; 
+            text-align: center; 
+            text-transform: uppercase; 
+        }
+
+        header { 
+            height: 100vh; 
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('cover.png') center/cover no-repeat; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            border-bottom: 3px solid var(--gold); 
+        }
+
+        .hero-title { 
+            font-size: clamp(2rem, 8vw, 4rem); 
+            color: var(--gold); 
+            letter-spacing: 7px; 
+            margin: 0; 
+            font-weight: 900;
+        }
+
+        .sub-title { 
+            letter-spacing: 4px; 
+            margin-top: 15px; 
+            font-size: 0.9rem; 
+            color: var(--gold);
+        }
+
+        .container { 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 80px 20px; 
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            padding: 40px; 
+            border: 1px solid rgba(212, 175, 55, 0.1); 
+            border-radius: 15px; 
+            transition: 0.5s; 
+        }
+
+        .card:hover { 
+            transform: translateY(-15px); 
+            border-color: var(--gold); 
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+        }
+
+        /* Buttons */
+        .btn-box { margin-top: 30px; }
+        .btn-gold { 
+            background: var(--gold); 
+            color: black; 
+            padding: 18px 45px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 900; 
+            margin: 10px; 
+            display: inline-block; 
+            width: 280px; 
+            letter-spacing: 2px;
+        }
+        .btn-outline { 
+            border: 2px solid var(--gold); 
+            color: var(--gold); 
+            padding: 16px 45px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 900; 
+            margin: 10px; 
+            display: inline-block; 
+            width: 280px; 
+            transition: 0.3s; 
+            letter-spacing: 2px;
+        }
         .btn-outline:hover { background: var(--gold); color: black; }
-        footer { padding: 80px 20px; background: #00050a; border-top: 2px solid var(--gold); }
+
+        footer { 
+            padding: 100px 20px; 
+            background: #00050a; 
+            border-top: 2px solid var(--gold); 
+        }
+
+        .verified-badge { color: #1877F2; margin-left: 5px; }
     </style>
 </head>
 <body>
 
     <header>
-        <div style="border: 2px solid var(--gold); padding: 10px 30px; border-radius: 50px; margin-bottom: 20px; color: var(--gold); font-weight: bold;">SR ELECTRONICS PARK</div>
+        <div style="border: 2px solid var(--gold); padding: 12px 35px; border-radius: 50px; margin-bottom: 25px; color: var(--gold); font-weight: bold; font-size: 0.8rem; letter-spacing: 3px;">SR ELECTRONICS PARK | GLOBAL RESEARCH</div>
         <h1 class="hero-title">SALSABILAH AMIN EMPIRES</h1>
-        <p style="letter-spacing: 3px; margin-top: 15px;">GLOBAL RESEARCH • INDUSTRIAL INNOVATION • LEGACY</p>
+        <p class="sub-title">INDUSTRIAL INTELLIGENCE • CRITICAL INFRASTRUCTURE • LEGACY</p>
         
-        <a href="media.html" class="btn-gold">GLOBAL IMPACT REPORTS</a>
-        <a href="books.html" class="btn-outline">OFFICIAL BOOKSHELF</a>
+        <div class="btn-box">
+            <a href="media.html" class="btn-gold">VIEW GLOBAL REPORTS</a>
+            <a href="books.html" class="btn-outline">OFFICIAL BOOKSHELF</a>
+        </div>
     </header>
 
     <div class="container">
-        <h2 style="color: var(--gold); margin-bottom: 50px; letter-spacing: 3px;">GOVERNANCE & LEADERSHIP</h2>
+        <h2 style="color: var(--gold); margin-bottom: 60px; letter-spacing: 5px; font-size: 1.8rem;">GOVERNANCE & LEADERSHIP</h2>
         <div class="grid">
             <div class="card">
-                <i class="fas fa-crown" style="font-size: 3rem; color: var(--gold); margin-bottom: 20px;"></i>
-                <h3>NAHIAN SULTANA JUI</h3>
-                <p style="color: var(--gold); font-weight: bold;">CHAIRMAN</p>
-                <p style="font-size: 0.8rem;">STRATEGIC GOVERNANCE & OVERSIGHT</p>
+                <i class="fas fa-crown" style="font-size: 3rem; color: var(--gold); margin-bottom: 25px;"></i>
+                <h3 style="letter-spacing: 2px;">NAHIAN SULTANA JUI</h3>
+                <p style="color: var(--gold); font-weight: bold; font-size: 0.9rem;">CHAIRMAN</p>
+                <p style="font-size: 0.75rem; text-transform: none; color: #888;">Leading strategic oversight and global empire governance.</p>
             </div>
             <div class="card">
-                <i class="fas fa-user-tie" style="font-size: 3rem; color: var(--gold); margin-bottom: 20px;"></i>
-                <h3>MD AL AMIN SOHAG</h3>
-                <p style="color: var(--gold); font-weight: bold;">MANAGING DIRECTOR</p>
-                <p style="font-size: 0.8rem;">INDUSTRIAL INNOVATION & GLOBAL RESEARCH</p>
+                <i class="fas fa-user-tie" style="font-size: 3rem; color: var(--gold); margin-bottom: 25px;"></i>
+                <h3 style="letter-spacing: 2px;">MD AL AMIN SOHAG</h3>
+                <p style="color: var(--gold); font-weight: bold; font-size: 0.9rem;">MANAGING DIRECTOR</p>
+                <p style="font-size: 0.75rem; text-transform: none; color: #888;">Global Systems Strategist | Author of Circuit to Start Up.</p>
             </div>
             <div class="card">
-                <img src="salsabilah.jpg" alt="SALSABILAH AMIN" class="legacy-img">
-                <h3>SALSABILAH AMIN</h3>
-                <p style="color: var(--gold); font-weight: bold;">THE LEGACY</p>
-                <p style="font-size: 0.8rem;">INSPIRATION FOR THE FUTURE GENERATION</p>
+                <i class="fas fa-gem" style="font-size: 3rem; color: var(--gold); margin-bottom: 25px;"></i>
+                <h3 style="letter-spacing: 2px;">SALSABILAH AMIN</h3>
+                <p style="color: var(--gold); font-weight: bold; font-size: 0.9rem;">THE LEGACY</p>
+                <p style="font-size: 0.75rem; text-transform: none; color: #888;">The eternal inspiration behind the industrial foundation.</p>
             </div>
-        </div>
-
-        <h2 style="color: var(--gold); margin: 80px 0 50px; letter-spacing: 3px;">VERIFIED DIRECTORY</h2>
-        <div class="grid">
-            <a href="https://maps.google.com/?q=SR+Electronics+Park+Hat+Boalia" target="_blank" class="card">
-                <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: #ea4335;"></i>
-                <h3>SR ELECTRONICS PARK</h3>
-                <p style="font-size: 0.8rem;">SHAH SUPER MARKET, HAT BOALIA</p>
-            </a>
-            <a href="https://www.facebook.com/salsabilahelectronics/" target="_blank" class="card">
-                <i class="fab fa-facebook" style="font-size: 2.5rem; color: #1877F2;"></i>
-                <h3>VERIFIED FACEBOOK</h3>
-                <p style="font-size: 0.8rem;">62K+ GLOBAL COMMUNITY</p>
-            </a>
-            <a href="books.html" class="card">
-                <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--gold);"></i>
-                <h3>SECURED BOOKSHELF</h3>
-                <p style="font-size: 0.8rem;">CIRCUIT TO START UP (OFFICIAL)</p>
-            </a>
         </div>
     </div>
 
     <footer>
-        <h2 style="color: var(--gold);">MD. AL AMIN SOHAG <i class="fas fa-check-circle" style="color:#1877F2;"></i></h2>
-        <a href="mailto:seo@salsabilah.com" style="color: var(--gold); text-decoration: none; font-weight: bold;">SEO@SALSABILAH.COM</a>
-        <div style="margin-top: 30px;">
-            <a href="https://wa.me/8801711995940" style="color: var(--gold); font-size: 2.5rem; margin: 0 20px;"><i class="fab fa-whatsapp"></i></a>
+        <h2 style="color: var(--gold); letter-spacing: 3px; margin-bottom: 5px;">MD. AL AMIN SOHAG <i class="fas fa-check-circle verified-badge"></i></h2>
+        <p style="font-size: 0.9rem; margin-bottom: 30px;"><a href="mailto:seo@salsabilah.com" style="color: var(--gold); text-decoration: none;">SEO@SALSABILAH.COM</a></p>
+        
+        <div style="color: #555; font-size: 0.7rem; letter-spacing: 1.5px;">
+            <p>UK REGISTERED NO: 09814720 | RESIDING IN DHAKA, BANGLADESH</p>
+            <p>STRATEGIC CONTRIBUTOR TO EUROPEAN COMMISSION JRC RESEARCH ACROSS 19 NATIONS</p>
+            <p style="margin-top: 30px;">© 2026 SALSABILAH AMIN EMPIRES | ALL RIGHTS RESERVED</p>
         </div>
-        <p style="font-size: 0.7rem; color: #444; margin-top: 40px;">UK REG NO: 09814720 | RESIDING IN DHAKA, BANGLADESH</p>
     </footer>
 
 </body>
