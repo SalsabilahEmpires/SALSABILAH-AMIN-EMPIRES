@@ -3,50 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLOBAL MEDIA IMPACT | SR ELECTRONICS PARK</title>
+    <title>GLOBAL MEDIA IMPACT | MD. AL AMIN SOHAG</title>
     <link rel="icon" type="image/jpeg" href="pavicon.png.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --gold: #D4AF37; --dark-bg: #000810; }
-        body { background: var(--dark-bg); color: white; font-family: 'Georgia', serif; margin: 0; text-align: center; text-transform: uppercase; }
-        header { padding: 60px 20px; border-bottom: 2px solid var(--gold); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1100px; margin: 40px auto; padding: 20px; }
-        .card { border: 1px solid rgba(212, 175, 55, 0.2); padding: 25px; border-radius: 12px; text-align: left; background: rgba(255,255,255,0.02); }
-        .tag { background: var(--gold); color: black; padding: 3px 10px; font-size: 0.7rem; font-weight: bold; margin-bottom: 10px; display: inline-block; }
-        .link-btn { color: var(--gold); text-decoration: none; font-weight: bold; border-bottom: 1px solid var(--gold); font-size: 0.8rem; }
+        :root { --gold: #D4AF37; --dark-bg: #000810; --card-hover: rgba(212, 175, 55, 0.1); }
+        body { background: var(--dark-bg); color: #e0e0e0; font-family: 'Georgia', serif; margin: 0; text-align: center; text-transform: uppercase; scroll-behavior: smooth; }
+        header { padding: 80px 20px; border-bottom: 2px solid var(--gold); background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('cover.png') center/cover; }
+        .alert-bar { background: #8B0000; color: white; padding: 10px; font-size: 0.8rem; letter-spacing: 2px; font-weight: bold; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 50px auto; padding: 20px; }
+        .card { border: 1px solid rgba(212, 175, 55, 0.2); padding: 35px; border-radius: 15px; text-align: left; background: rgba(255,255,255,0.02); transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); background: var(--card-hover); border-color: var(--gold); }
+        .tag { background: var(--gold); color: black; padding: 4px 12px; font-size: 0.75rem; font-weight: 900; margin-bottom: 15px; display: inline-block; border-radius: 3px; }
+        .link-btn { color: var(--gold); text-decoration: none; font-weight: bold; border-bottom: 2px solid var(--gold); font-size: 0.85rem; transition: 0.3s; }
+        .link-btn:hover { letter-spacing: 1px; }
+        .briefing-section { background: rgba(212, 175, 55, 0.05); padding: 50px 20px; border-top: 1px solid var(--gold); margin-top: 50px; }
     </style>
 </head>
 <body>
 
+    <div class="alert-bar">
+        <i class="fas fa-exclamation-triangle"></i> GLOBAL PRESS UPDATE: INTELLECTUAL PROPERTY DISPUTE IN PROGRESS
+    </div>
+
     <header>
-        <h1 style="color: var(--gold); letter-spacing: 3px;">GLOBAL MEDIA IMPACT</h1>
-        <p>REPORTS RECOGNIZED ACROSS 19+ NATIONS</p>
+        <h1 style="color: var(--gold); letter-spacing: 5px; font-size: 2.5rem; margin: 0;">GLOBAL MEDIA IMPACT</h1>
+        <p style="letter-spacing: 3px; margin-top: 15px; opacity: 0.8;">RESEARCH & REPORTS RECOGNIZED ACROSS 19+ NATIONS</p>
     </header>
 
     <div class="grid">
         <div class="card">
             <span class="tag">REUTERS</span>
-            <h3>ASSET RESILIENCE</h3>
-            <a href="https://www.reuters.com/business/gold-silver-rise-near-record-highs-2026-01-27/" target="_blank" class="link-btn">READ REPORT →</a>
+            <h3 style="letter-spacing: 1px;">ASSET RESILIENCE & COMMODITIES</h3>
+            <p style="text-transform: none; font-size: 0.8rem; color: #aaa; margin-bottom: 20px;">Analysis of global market shifts and industrial asset protection strategies.</p>
+            <a href="https://www.reuters.com/business/gold-silver-rise-near-record-highs-2026-01-27/" target="_blank" class="link-btn">VIEW BRIEFING →</a>
         </div>
         <div class="card">
             <span class="tag">NIKKEI ASIA</span>
-            <h3>MARKET LOGISTICS</h3>
-            <a href="https://asia.nikkei.com/Business/Retail/Alfamart-enters-Bangladesh" target="_blank" class="link-btn">READ REPORT →</a>
+            <h3 style="letter-spacing: 1px;">MARKET LOGISTICS & EXPANSION</h3>
+            <p style="text-transform: none; font-size: 0.8rem; color: #aaa; margin-bottom: 20px;">Strategic oversight on international retail entry and supply chain frameworks.</p>
+            <a href="https://asia.nikkei.com/Business/Retail/Alfamart-enters-Bangladesh" target="_blank" class="link-btn">READ ANALYSIS →</a>
         </div>
         <div class="card">
-            <span class="tag">JRC ITALY</span>
-            <h3>INFRASTRUCTURE SCIENCE</h3>
+            <span class="tag">JRC EUROPE</span>
+            <h3 style="letter-spacing: 1px;">INFRASTRUCTURE SCIENCE</h3>
+            <p style="text-transform: none; font-size: 0.8rem; color: #aaa; margin-bottom: 20px;">Collaborative research recognized by the European Commission Joint Research Centre.</p>
             <a href="https://publications.jrc.ec.europa.eu/repository/" target="_blank" class="link-btn">VERIFY RESEARCH →</a>
         </div>
         <div class="card">
             <span class="tag">DW GERMANY</span>
-            <h3>B2B NETWORKS</h3>
-            <a href="https://amp.dw.com/en/italys-b2b-cashless-sardex/a-45300395" target="_blank" class="link-btn">READ REPORT →</a>
+            <h3 style="letter-spacing: 1px;">B2B DIGITAL NETWORKS</h3>
+            <p style="text-transform: none; font-size: 0.8rem; color: #aaa; margin-bottom: 20px;">Featured insights on cashless B2B systems and future industrial economies.</p>
+            <a href="https://amp.dw.com/en/italys-b2b-cashless-sardex/a-45300395" target="_blank" class="link-btn">READ COVERAGE →</a>
         </div>
     </div>
 
-    <a href="index.html" style="color: var(--gold); text-decoration: none; display: inline-block; margin: 40px; border: 1px solid var(--gold); padding: 10px 30px; border-radius: 50px;">BACK TO HOME</a>
+    <div class="briefing-section">
+        <h2 style="color: var(--gold); letter-spacing: 3px;">PRESS CONTACT</h2>
+        <p style="text-transform: none; color: #bbb; max-width: 700px; margin: 20px auto; line-height: 1.6;">
+            FOR GLOBAL MEDIA INQUIRIES REGARDING THE <strong>'DIGIT THEORY'</strong> OR ONGOING INTELLECTUAL PROPERTY LITIGATION, PLEASE CONTACT THE STRATEGIC OPERATIONS DESK.
+        </p>
+        <a href="mailto:admin@salsabilah.com" class="link-btn" style="font-size: 1.1rem;">ADMIN@SALSABILAH.COM</a>
+    </div>
+
+    <footer style="padding: 60px 20px; opacity: 0.6; font-size: 0.8rem;">
+        <a href="index.html" style="color: var(--gold); text-decoration: none; border: 1px solid var(--gold); padding: 12px 40px; border-radius: 50px; letter-spacing: 2px;">RETURN TO EMPIRE HOME</a>
+        <p style="margin-top: 40px;">© 2026 SALSABILAH AMIN EMPIRES | GLOBAL MEDIA DIVISION</p>
+    </footer>
 
 </body>
 </html>
