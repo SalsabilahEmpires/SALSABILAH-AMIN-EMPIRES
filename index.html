@@ -3,54 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALSABILAH AMIN EMPIRES | GLOBAL INDUSTRIAL LEGACY</title>
+    <title>MD. AL AMIN SOHAG | SALSABILAH AMIN EMPIRES</title>
     <link rel="icon" type="image/jpeg" href="pavicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --gold: #D4AF37; --dark-bg: #000810; --card-bg: rgba(255, 255, 255, 0.03); --text-silver: #E0E0E0; }
-        body { margin: 0; padding: 0; font-family: 'Georgia', serif; background-color: var(--dark-bg); color: var(--text-silver); scroll-behavior: smooth; text-align: center; text-transform: uppercase; }
-        header { height: 100vh; background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('cover.png') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid var(--gold); }
-        .hero-title { font-size: clamp(2rem, 8vw, 4rem); color: var(--gold); letter-spacing: 7px; margin: 0; font-weight: 900; }
-        .sub-title { letter-spacing: 4px; margin-top: 15px; font-size: 0.9rem; color: var(--gold); }
-        .container { max-width: 1200px; margin: auto; padding: 80px 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-        .card { background: var(--card-bg); padding: 40px; border: 1px solid rgba(212, 175, 55, 0.1); border-radius: 15px; transition: 0.5s; }
-        .card:hover { transform: translateY(-15px); border-color: var(--gold); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1); }
-        .notice-box { background: rgba(212, 175, 55, 0.05); border: 1px solid var(--gold); padding: 30px; margin-top: 50px; border-radius: 10px; }
-        .btn-gold { background: var(--gold); color: black; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: 900; margin: 10px; display: inline-block; width: 280px; letter-spacing: 2px; }
-        .btn-outline { border: 2px solid var(--gold); color: var(--gold); padding: 16px 45px; border-radius: 50px; text-decoration: none; font-weight: 900; margin: 10px; display: inline-block; width: 280px; transition: 0.3s; letter-spacing: 2px; }
-        footer { padding: 100px 20px; background: #00050a; border-top: 2px solid var(--gold); }
+        :root { 
+            --gold: #D4AF37; 
+            --dark-bg: #000810; 
+            --card-bg: rgba(255, 255, 255, 0.03); 
+            --text-silver: #E0E0E0;
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Georgia', serif; 
+            background-color: var(--dark-bg); 
+            color: var(--text-silver); 
+            scroll-behavior: smooth; 
+            text-align: center; 
+            text-transform: uppercase; 
+        }
+
+        header { 
+            height: 100vh; 
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('cover.png') center/cover no-repeat; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .hero-title { 
+            font-size: clamp(2rem, 8vw, 4rem); 
+            color: var(--gold); 
+            letter-spacing: 7px; 
+            margin: 0; 
+            font-weight: 900;
+        }
+
+        .sub-title { 
+            letter-spacing: 4px; 
+            margin-top: 15px; 
+            font-size: 0.9rem; 
+            color: var(--gold);
+            text-transform: none;
+        }
+
+        .container { 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 80px 20px; 
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            padding: 40px; 
+            border: 1px solid rgba(212, 175, 55, 0.1); 
+            border-radius: 15px; 
+            margin-bottom: 30px;
+            transition: 0.5s; 
+        }
+
+        .card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--gold); 
+        }
+
+        .btn-gold { 
+            background: var(--gold); 
+            color: black; 
+            padding: 18px 45px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 900; 
+            margin: 10px; 
+            display: inline-block; 
+            letter-spacing: 2px;
+        }
+
+        .notice-box {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid var(--gold);
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            text-transform: none;
+            line-height: 1.6;
+        }
+
+        footer { 
+            padding: 80px 20px; 
+            background: #00050a; 
+            border-top: 2px solid var(--gold); 
+        }
+
         .verified-badge { color: #1877F2; margin-left: 5px; }
     </style>
 </head>
 <body>
+
     <header>
-        <div style="border: 2px solid var(--gold); padding: 12px 35px; border-radius: 50px; margin-bottom: 25px; color: var(--gold); font-weight: bold; font-size: 0.8rem; letter-spacing: 3px;">GLOBAL INDUSTRIAL LEGACY | RISING STAR OF ASIA (DW)</div>
-        <h1 class="hero-title">SALSABILAH AMIN EMPIRES</h1>
-        <p class="sub-title">INDUSTRIAL INTELLIGENCE • CRITICAL INFRASTRUCTURE • LEGACY</p>
-        <div class="btn-box">
+        <div style="border: 2px solid var(--gold); padding: 10px 30px; border-radius: 50px; margin-bottom: 25px; color: var(--gold); font-size: 0.8rem; letter-spacing: 2px;">GLOBAL INDUSTRIAL LEGACY</div>
+        <h1 class="hero-title">MD. AL AMIN SOHAG</h1>
+        <p class="sub-title">Global Systems Strategist | Author | Founder of Salsabilah Amin Empires</p>
+        
+        <div style="margin-top: 30px;">
             <a href="media.html" class="btn-gold">STRATEGIC BRIEFING 2026</a>
-            <a href="books.html" class="btn-outline">OFFICIAL BOOKSHELF</a>
         </div>
     </header>
+
     <div class="container">
-        <div style="margin-bottom: 80px; padding: 20px; border-left: 4px solid var(--gold); background: rgba(255,255,255,0.02); text-align: left;">
-            <h2 style="color: var(--gold); letter-spacing: 3px;">GLOBAL AUTHORITY & RESEARCH</h2>
-            <p style="text-transform: none; color: #bbb; line-height: 1.6;">MD. AL AMIN SOHAG. IS A GOODREADS VERIFIED AUTHOR AND A GLOBAL TECHNOCRAT RECOGNIZED AS THE <strong>'RISING STAR OF ASIA' BY DEUTSCHE WELLE (DW)</strong>. CURRENTLY SYNERGIZING INDUSTRIAL RESILIENCE FRAMEWORKS ACROSS 19 NATIONS.</p>
+        <div class="card">
+            <h2 style="color: var(--gold);">GLOBAL RECOGNITION</h2>
+            <p style="text-transform: none;">Recognized as the <strong>'Rising Star of Asia' by Deutsche Welle (DW)</strong>. Currently synergizing industrial resilience across 19 nations.</p>
         </div>
-        <div class="grid">
-            <div class="card"><h3>NAHIAN SULTANA JUI.</h3><p style="color: var(--gold);">CHAIRMAN</p></div>
-            <div class="card"><h3>MD. AL AMIN SOHAG.</h3><p style="color: var(--gold);">MANAGING DIRECTOR</p></div>
-            <div class="card"><h3>SALSABILAH AMIN.</h3><p style="color: var(--gold);">THE LEGACY</p></div>
+
+        <div class="card">
+            <h2 style="color: var(--gold);">AUTHORITY & RESEARCH</h2>
+            <p style="text-transform: none;">Author of <strong>"Circuit to Start Up"</strong> (Goodreads Verified). Strategic contributor to European Commission JRC research.</p>
         </div>
+
         <div class="notice-box">
-            <p>THE PROPRIETARY FRAMEWORKS INCLUDING 'DIGIT THEORY' AND 'SOHAG FILTER' ARE THE EXCLUSIVE INTELLECTUAL PROPERTY OF MD. AL AMIN SOHAG.</p>
+            <h3 style="color: var(--gold); letter-spacing: 2px;"><i class="fas fa-gavel"></i> STRATEGIC IP NOTICE</h3>
+            <p>The proprietary frameworks including 'Digit Theory' and 'Sohag Filter' are the exclusive intellectual property of MD. AL AMIN SOHAG. Unauthorized replication is strictly prohibited under international IP law.</p>
         </div>
     </div>
+
     <footer>
-        <h2 style="color: var(--gold);">MD. AL AMIN SOHAG. <i class="fas fa-check-circle verified-badge"></i></h2>
-        <p><a href="mailto:seo@salsabilah.com" style="color: var(--gold); text-decoration: none;">SEO@SALSABILAH.COM</a></p>
-        <p>© 2026 SALSABILAH AMIN EMPIRES | ALL RIGHTS RESERVED</p>
+        <h2 style="color: var(--gold);">MD. AL AMIN SOHAG <i class="fas fa-check-circle verified-badge"></i></h2>
+        <p style="margin-bottom: 20px;"><a href="mailto:seo@salsabilah.com" style="color: var(--gold); text-decoration: none;">SEO@SALSABILAH.COM</a></p>
+        <div style="color: #555; font-size: 0.7rem; letter-spacing: 1px;">
+            <p>UK REGISTERED NO: 09814720 | RESIDING IN DHAKA, BANGLADESH</p>
+            <p>© 2026 SALSABILAH AMIN EMPIRES | ALL RIGHTS RESERVED</p>
+        </div>
     </footer>
+
 </body>
 </html>
